@@ -51,7 +51,6 @@ npm install
 
 ---
 
-##
 ### 2. Run Dev Server
 
 ```bash
@@ -59,7 +58,7 @@ npm run dev
 
 ---
 
-##
+
 ### 3. Build for Production
 
 ```bash
@@ -67,7 +66,6 @@ npm run build
 
 ---
 
-##
 ### 4.Preview Production Build
 
 ```bash
