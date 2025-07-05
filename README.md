@@ -63,16 +63,12 @@ This is a modern React project powered by Vite and integrated with several essen
 npm install
 
 
----
 
 ### 2. Run Dev Server
 
 ```bash
 npm run dev
-npm run build
 
-
----
 
 
 ### 3. Build for Production
@@ -87,6 +83,3 @@ npm run build
 ```bash
 npm run preview
 
-
-
->>>>>>> 5710f40d20a390af9c2db7bd79c569fbfd752339
