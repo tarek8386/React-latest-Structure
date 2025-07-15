@@ -8,21 +8,24 @@ import { Toaster } from 'react-hot-toast';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ThemeProvider } from './components/shared/ThemeProvider';
-
+import ReactLenis from 'lenis/react';
 
 AOS.init({
-  duration: 1000, 
-  once: true, 
+  duration: 1000,
+  once: true,
 });
 
 const queryClient = new QueryClient();
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-        <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+        <ReactLenis root>
           <RouterProvider router={router} />
-          <Toaster />
-        </ThemeProvider>
+        </ReactLenis>
+
+        <Toaster />
+      </ThemeProvider>
     </QueryClientProvider>
   </StrictMode>
 );
